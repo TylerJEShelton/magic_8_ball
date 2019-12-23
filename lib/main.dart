@@ -32,7 +32,15 @@ class _BallState extends State<Ball> {
       child: Column(
         children: <Widget>[
           Expanded(
-            child: Image.asset('images/ball1.png'),
+            child: FlatButton(
+              onPressed: () {
+                print('I got clicked');
+//                setState(() {
+//                  ();
+//                });
+              },
+              child: Image.asset('images/ball1.png'),
+            ),
           ),
         ],
       ),
